@@ -1,0 +1,32 @@
+<view class='wallet_group'>
+
+  <view class='item'>
+    <text class='title'>昨天收益（元）</text>
+    <view class='desc'>￥
+      <view class='number'>{{yesterday}}</view>
+    </view>
+    <view class='line'></view>
+  </view>
+  <view class='item'>
+    <text class='title'>本周收益（元）</text>
+    <view class='desc'>￥
+      <view class='number'>{{week}}</view>
+    </view>
+  </view>
+  <view class='item'>
+    <text class='title'>总余额（元）</text>
+    <view class='desc'>￥
+      <view class='number'>{{total}}</view>
+    </view>
+    <view class='line'></view>
+  </view>
+  <view class='item'>
+    <text class='title'>可提现余额（元）</text>
+    <view class='desc'>￥
+      <view class='number'>{{withdraw}}</view>
+    </view>
+  </view>
+</view>
+
+<view class='btn tixian' bindtap='tixian'>提现</view>
+<view class='btn chongzhi' bindtap='chongzhi'>充值</view>

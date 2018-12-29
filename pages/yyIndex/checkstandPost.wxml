@@ -1,0 +1,35 @@
+<view class='price'>
+  订单金额：
+  <text>￥{{price}}</text>
+</view>
+
+<view class='payType'>
+  <view class='item' bindtap='wxPay'>
+    <image src='/images/wx.png' mode='aspectFit' class='icon'></image>
+    <view class='title'>微信</view>
+    <view class='desc'>快捷支付</view>
+  </view>
+  <view class='item' bindtap='yuePay'>
+    <image src='/images/wallte.png' mode='aspectFit' class='icon'></image>
+    <view class='title'>余额支付</view>
+    <view class='desc'>余额安全支付</view>
+  </view>
+</view>
+
+<view class='bz'>
+  <view class='title'>平台保障</view>
+  <view class='list'>
+    <view class='item'>
+      <image src='/images/pay1.png' mode='aspectFit' class='icon'></image>
+      <view class='itemTitle'>第三方帐号托管</view>
+    </view>
+     <view class='item'>
+      <image src='/images/pay2.png' mode='aspectFit' class='icon'></image>
+      <view class='itemTitle'>未选人全额退款</view>
+    </view>
+     <view class='item'>
+      <image src='/images/pay3.png' mode='aspectFit' class='icon'></image>
+      <view class='itemTitle'>无任何额外费用</view>
+    </view>
+  </view>
+</view>

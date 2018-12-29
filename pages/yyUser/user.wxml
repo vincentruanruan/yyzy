@@ -1,0 +1,45 @@
+<view class='user_top'>
+
+  <view class='user'>
+    <image class='icon' mode='aspectFit' src="{{userIconUrl||'/images/default.png'}}"></image>
+    <text class='name'>{{userName}}</text>
+  </view>
+
+</view>
+
+<view class='list'>
+
+  <view class='item' bindtap='openOrder'>
+    <image class='icon' mode='aspectFit' src='/images/icon1.png'></image>
+    <view>我的约会
+      <text class='right'>></text>
+    </view>
+  </view>
+
+  <view class='item' bindtap='openWallet'>
+    <image class='icon' mode='aspectFit' src='/images/icon2.png'></image>
+    <view>我的钱包
+      <text class='right'>></text>
+    </view>
+  </view>
+  <view class='item' bindtap='openShare' wx:if="{{exist_parent!='0'}}">
+    <image class='icon' mode='aspectFit' src='/images/icon3.png'></image>
+    <view>邀请好友
+      <text class='right'>></text>
+    </view>
+  </view>
+
+  <view class='item' bindtap='openAbout'>
+    <image class='icon' mode='aspectFit' src='/images/icon4.png'></image>
+    <view>关于我们
+      <text class='right'>></text>
+    </view>
+  </view>
+  <view class='item' bindtap='logout'>
+    <image class='icon' mode='aspectFit' src='/images/logout.png'></image>
+    <view>退出登录
+      <text class='right'>></text>
+    </view>
+  </view>
+
+</view>

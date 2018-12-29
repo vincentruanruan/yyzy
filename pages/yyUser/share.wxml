@@ -1,0 +1,11 @@
+
+<view class='center'>
+  <view class='title'>我的邀请码</view>
+  <view class='code'>{{myCode}}</view>
+  <button class='copy' bindtap='copyCode'>复制</button>
+</view>
+
+<view class='body'>
+  <image class="bg" src="/images/share_bg.jpg" mode="widthFix"></image>
+</view>
+

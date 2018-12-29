@@ -1,0 +1,42 @@
+<view class="container input_group">
+
+  <view class='item'>
+    <text>手机号</text>
+    <input type='number' placeholder="请输入手机号" maxlength="11" value="{{userPhone}}" bindinput="bindUserPhone" />
+    <icon type="clear" size="25" bindtap="clearUserPhone" class="{{userPhone?'normal':'hidden'}}" />
+  </view>
+
+  <view class='item'>
+    <text>验证码</text>
+    <input type='number' placeholder="请输入验证码" maxlength="6" value="{{userVerify}}" bindinput="bindUserVerify" />
+    <!-- <icon type="clear" size="25" bindtap="clearUserVerify" class="{{userVerify?'normal':'hidden'}}" /> -->
+    <button class="verity_code {{isVerify && userPhone.length==11?'normal':'disabled'}}" type="default" bindtap="getCode" bindinput="bindGetVerifyCode">{{getVerifyCode}}</button>
+  </view>
+
+  <view class='item'>
+    <text>密码</text>
+    <input type='password' placeholder="请输入密码" value='{{userPassword}}' bindinput="bindUserPassword" />
+    <icon type="clear" size="25" bindtap="clearUserPassword" class="{{userPassword?'normal':'hidden'}}" />
+  </view>
+
+  <view class='item'>
+    <text>确认密码</text>
+    <input type='password' placeholder="请输入确认密码" value='{{userRepassword}}' bindinput="bindRepassword" />
+    <icon type="clear" size="25" bindtap="clearRepassword" class="{{userRepassword?'normal':'hidden'}}" />
+    <text class="tip {{!isEqualPwd?'normal':'hidden'}}">两次密码不一致</text>
+  </view>
+  <view class='item'>
+    <text>选择性别</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" >
+        <radio data-value="1" checked="{{gender==1?'checked':''}}" bindtap='changeGender'/>男生
+      </label>
+      <label class="radio" >
+        <radio data-value="2" checked="{{gender==2?'checked':''}}" bindtap='changeGender'/>女生
+      </label>
+    </radio-group>
+  </view>
+
+  <button class='register_btn' type="default" bindtap="registerClick" disabled="{{userPhone && userPassword && userVerify && isEqualPwd && userRepassword?false:true}}"> 注册 </button>
+
+</view>

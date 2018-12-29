@@ -1,0 +1,59 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">发布的约会</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">参与的约会</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 44}}px;" bindchange="bindChange">
+
+  <!-- 发布的约会 -->
+  <swiper-item>
+    <view class='myPostGroup'>
+
+      <view class='no'>{{myPost.length>0?'':'没有发布的约会~'}}</view>
+
+      <view class='item' wx:for="{{myPost}}" wx:key="{{item.id}}" data-orderamount="{{item.orderamount}}" data-ordersn="{{item.ordersn}}" catchtap='toConfirm' data-orderId='{{item.id}}'>
+        <view class='type'>类型：{{item.tagstr}}
+          <text>{{item.status==0?'未付款':''}}{{item.status==1?'待确认':''}}{{item.status==2?'进行中':''}}{{item.status==3?'待评价 ':''}}{{item.status==4?'已完成':''}}</text>
+        </view>
+        <view class='time'>{{item.s_time}}</view>
+        <view class='gender'>性别:{{item.sex==0?'不限':''}}{{item.sex==1?'男':''}}{{item.sex==2?'女':''}}
+          <text>人数：{{item.attend_count}}/{{item.limitCount}}</text>
+        </view>
+        <view class='statusBtn'>
+          <button wx:if="{{item.status==0}}" data-orderamount="{{item.orderamount}}" data-ordersn="{{item.ordersn}}" catchtap='toPay'>去付款</button>
+          <button wx:if="{{item.status==1}}" data-orderamount="{{item.orderamount}}" data-ordersn="{{item.ordersn}}" catchtap='toConfirm' data-orderId='{{item.id}}'>确认对象</button>
+          <button wx:if="{{item.status==2}}" data-orderamount="{{item.orderamount}}" data-ordersn="{{item.ordersn}}" catchtap='toFinishConfirm' data-orderId='{{item.id}}'>确定结束</button>
+          <button wx:if="{{item.status==3}}" data-orderamount="{{item.orderamount}}" data-ordersn="{{item.ordersn}}" catchtap=''>待评价</button>
+        </view>
+      </view>
+
+    </view>
+
+  </swiper-item>
+
+
+
+  <!-- 参与的约会 -->
+  <swiper-item>
+    <view class='myJoinGroup'>
+
+      <view class='no'>{{myJoin.length>0?'':'没有参与的约会~'}}</view>
+
+      <view class='item' wx:for="{{myJoin}}" wx:key="{{item.id}}">
+        <image class='icon' src='{{item.user.headimg}}' mode='aspectFit'></image>
+        <view class='status'>{{item.status==0?'未付款':''}}{{item.status==1?'待确认':''}}{{item.status==2?'进行中':''}}{{item.status==3?'待评价 ':''}}{{item.status==4?'已完成':''}}</view>
+        <view class='user'>发起者：{{item.user.nickname}}</view>
+        <view class='type'>类型：{{item.tagstr}}</view>
+        <view class='location'>地点：{{item.address}}</view>
+        <view class='amount'>红包金额：￥{{item.amount}}</view>
+        <view class='time'>时间：{{item.s_time}}</view>
+        <view class='bottom'>
+          <button data-id='{{item.id}}' bindtap='cancelJoin'>取消参加</button>
+        </view>
+      </view>
+
+    </view>
+  </swiper-item>
+</swiper>
+

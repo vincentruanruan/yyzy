@@ -1,0 +1,34 @@
+.body {
+  height: 100%;
+  background: #823fa6;
+}
+
+.bg {
+  width: 100%;
+}
+
+.center {
+  position: fixed;
+  z-index: 99999;
+  color: #fff;
+  /* background: rgba(0, 0, 0, 0.5); */
+  width: 100%;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.center .title, .center .code {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.center button {
+  display: inline-block;
+  color: #e97716;
+  background: #fdb62b;
+  line-height: 34px;
+}
+
+.center button:active {
+  opacity: 0.8;
+}

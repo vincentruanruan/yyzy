@@ -1,0 +1,26 @@
+
+
+<view class="list">
+
+  <view class="item {{cindex==1?'select':''}}" bindtap='select' data-id='1'>
+    <image mode='aspectFit' src="{{cindex!=1?'/images/c1n.png':'/images/c1.png'}}"></image>
+    <view class='title'>好评</view>
+  </view>
+  <view class="item {{cindex==2?'select':''}}" bindtap='select' data-id='2'>
+    <image mode='aspectFit' src="{{cindex!=2?'/images/c2n.png':'/images/c2.png'}}"></image>
+    <view class='title'>好评</view>
+  </view>
+  <view class="item {{cindex==3?'select':''}}" bindtap='select' data-id='3'>
+    <image mode='aspectFit' src="{{cindex!=3?'/images/c3n.png':'/images/c3.png'}}"></image>
+    <view class='title'>好评</view>
+  </view>
+
+</view>
+
+<view>
+  <textarea placeholder="请输入评价" value="{{msg}}" bindinput="msgChange" auto-focus />
+</view>
+
+<view class='bottom'>
+  <button type="default"  bindtap="post" hover-class="other-button-hover"> 提交 </button>
+</view>

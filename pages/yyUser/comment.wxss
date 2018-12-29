@@ -1,0 +1,37 @@
+/* pages/yyUser/comment.wxss */
+
+.list{
+
+}
+
+.list .item{
+  width: calc(100% / 3);
+  display: inline-block;
+  text-align: center;
+}
+
+.list .item image{
+  width: 50px;
+  height: 50px;
+}
+
+.list .item .title{
+  font-size: 18px;
+}
+
+.select .title{
+  color: #A28DE6;
+}
+textarea{
+  border: 1px solid #f0f0f0;
+  width: calc(100% - 50px);
+  margin-left: 15px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  height: 200px;
+  font-size: 16px;
+}
+.bottom{
+  padding: 15px;
+}

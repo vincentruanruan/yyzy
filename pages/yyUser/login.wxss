@@ -1,0 +1,52 @@
+/**index.wxss**/
+
+.input_group {
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+.input_group .item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input_group .item icon {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  z-index: 9999;
+}
+
+.input_group .item icon.hidden {
+  display: none;
+}
+
+.input_group .item icon.normal {
+  display: inline-block;
+}
+
+.input_group .item input {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.input_group .forget {
+  text-align: right;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.input_group .login_btn {
+  width: 100%;
+}
+
+.input_group .register {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #98b0ff;
+}

@@ -1,0 +1,25 @@
+
+<view class="container input_group">
+
+  <view class='item'>
+    <text>手机号</text>
+    <input type='number' placeholder="请输入手机号" maxlength="11" value="{{userPhone}}" bindinput="bindUserPhone" />
+    <icon type="clear" size="25" bindtap="clearUserPhone" class="{{userPhone?'normal':'hidden'}}" />
+  </view>
+
+  <view class='item'>
+    <text>密码</text>
+    <input type='password' placeholder="请输入密码" value='{{userPassword}}' bindinput="bindUserPassword" />
+    <icon type="clear" size="25" bindtap="clearUserPassword" class="{{userPassword?'normal':'hidden'}}" />
+  </view>
+  
+  <view class="forget" bindtap="jumpForget">
+    <text>忘记密码</text>
+  </view>
+
+  <button class='login_btn' type="default" disabled="{{userPhone && userPassword?false:true}}" bindtap="loginClick"> 登录 </button>
+
+  <view class="register" bindtap="jumpRegister">
+    <text>注册</text>
+  </view>
+</view>

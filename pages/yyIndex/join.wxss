@@ -1,0 +1,139 @@
+/* pages/yyIndex/join.wxss */
+
+
+
+.joinList{
+  padding: 0 10px;
+}
+
+.joinList .item{
+  border: 1px solid #f0f0f0;
+  margin: 10px 0;
+  border-radius: 7px;
+  padding: 10px;
+  position: relative;
+}
+.joinList .item .icon{
+  width: 100px;
+  height: 100px;
+}
+.joinList .item .right{
+  position: absolute;
+  padding-left: 120px;
+  top:10px;
+  font-size: 15px;
+}
+.joinList .item .right view{
+  margin: 5px 0;
+  color: #999;
+}
+.joinList .item .right view.username{
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+.joinList .item button{
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
+  color: #fff;
+  background: #AEB4FF;
+  line-height: 30px;
+  border-radius: 7px;
+}
+.joinList .item button:active{
+  opacity: 0.8;
+}
+
+.no{
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 10px;
+  color: #999;
+}
+.list{
+  display: block;
+}
+.list .item{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.list .item:active{
+  /* background: #fafafa; */
+}
+.list .item image{
+  width: 65%;
+  height: 3rem;
+}
+.list .item text{
+  display: block;
+  width: 100%;
+  font-size: 0.7rem;
+}
+
+.bottom {
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px #f0f0f0 solid;
+}
+
+.bottom .btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.bottom .btn:active {
+  opacity: 0.9;
+}
+
+.bottom .postBtn {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to left top, #89aeff, #b298ff);
+  line-height: 100px;
+  border-radius: 50%;
+}
+
+.bottom .acceptBtn {
+  position: absolute;
+  left: 40px;
+  top:45px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #b298ff;
+  border: 1px #f0f0f0 solid;
+}
+.bottom .acceptBtn:active,.bottom .userBtn:active{
+  background: #fafafa;
+}
+
+.bottom .userBtn{
+   position: absolute;
+  right: 40px;
+  top:45px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  color: #b298ff;
+  border: 1px #f0f0f0 solid;
+}
+.group{
+  padding-bottom: 140px;
+}

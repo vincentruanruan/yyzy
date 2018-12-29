@@ -1,0 +1,55 @@
+/* pages/yyIndex/pay.wxss */
+
+.bg{
+  height: 100%;
+  background: #fafafa;
+}
+
+.bg .balance{
+  background: #fff;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.bg .title{
+  background: #fff;
+  margin-top: 10px;
+  line-height: 44px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+.bg .list{
+  background: #fff;
+}
+.bg .list .item{
+  width: calc(100% / 3);
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 10px;
+}  
+.bg .list .item text{
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+  width: 70%;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.bg .list .item text.select{
+  border: 1px solid #AB9CFF;
+  background: #AB9CFF;
+  color: #fff;
+}
+
+.bg .payBtn{
+  width: 80%;
+  margin-top: 20px;
+  background: #AB9CFF;
+  color: #fff;
+  line-height: 44px;
+  border-radius: 22px;
+}
+.bg .payBtn:active{
+  opacity: 0.8;
+}

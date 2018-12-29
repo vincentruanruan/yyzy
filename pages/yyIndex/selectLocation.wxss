@@ -1,0 +1,67 @@
+@import "/lib/style/weui.wxss";
+
+.weui-media-box {
+  position: relative;
+}
+.weui-media-box:active{
+  background: #f0f0f0;
+}
+.weui-media-box .num{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 15px;
+  color: #666;
+}
+.weui-media-box .num image{
+ width: 13px;
+ height: 13px;
+}
+
+.weui-media-box__desc {
+  width: 70%;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.page{
+  margin-top: 45px;
+}
+.search{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99999999;
+}
+
+.search input{ 
+  width: calc(80% - 10px);
+  border: 1px solid #f0f0f0;
+  margin-left: 10px;
+  line-height: 34px;
+  height: 34px;
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+
+}
+.search text{
+  display: inline-block;
+  width: 20%;
+  position: absolute;
+  right: 0;
+  line-height: 44px;
+  font-size: 16px;
+  top: 0;
+  text-align: center;
+  color: #AEB4FF;
+}
+.search text:active{
+  opacity: .8;
+}

@@ -1,0 +1,106 @@
+@import "../../lib/weui.wxss";
+
+.container {
+  padding: 0 10px;
+  margin-top: 10px;
+  /* background: lavenderblush; */
+  width: 100%;
+  padding-bottom: 140px;
+  z-index: 1;
+}
+
+.select_group {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.select_group .item {
+  width: calc(100% = 10px);
+  background: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.select_group .item .left {
+  width: 100%;
+  text-align: left;
+}
+
+.select_group .item .right {
+  float: right;
+  color: #999;
+  font-size: 14px;
+}
+
+.select_group .item:active {
+  background: #f0f0f0;
+}
+
+.pt {
+  color: #a28de6;
+}
+
+.bottom {
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px #f0f0f0 solid;
+}
+
+.bottom .btn {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.bottom .btn:active {
+  opacity: 0.9;
+}
+
+.bottom .postBtn {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to left top, #89aeff, #b298ff);
+  line-height: 100px;
+  border-radius: 50%;
+}
+
+.bottom .acceptBtn {
+  position: absolute;
+  left: 40px;
+  top:45px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #b298ff;
+  border: 1px #f0f0f0 solid;
+}
+.bottom .acceptBtn:active,.bottom .userBtn:active{
+  background: #fafafa;
+}
+
+.bottom .userBtn{
+   position: absolute;
+  right: 40px;
+  top:45px;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+  color: #b298ff;
+  border: 1px #f0f0f0 solid;
+}

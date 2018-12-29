@@ -1,0 +1,120 @@
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 44px;
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+}
+
+.swiper-tab-list {
+  font-size: 15px;
+  display: inline-block;
+  width: 30%;
+  color: #777;
+  margin: 0 10px;
+}
+
+.on {
+  color: #aeb4ff;
+  border-bottom: 2px solid #aeb4ff;
+}
+
+.swiper-box {
+  padding-top: 44px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box .myPostGroup {
+  text-align: center;
+  /* background: red; */
+  height: 100%;
+  text-align: left;
+  padding: 0 10px;
+  overflow-y: scroll;
+}
+
+.swiper-box .myPostGroup .no, .swiper-box .myJoinGroup .no {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #999;
+}
+
+.swiper-box .myPostGroup .item {
+  border: 1px solid #f0f0f0;
+  margin: 10px 0;
+  border-radius: 7px;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.swiper-box .myPostGroup .item .type, .swiper-box .myPostGroup .item .time,
+.swiper-box .myPostGroup .item .gender {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.swiper-box .myPostGroup .item .type text,
+.swiper-box .myPostGroup .item .time text,
+.swiper-box .myPostGroup .item .gender text {
+  float: right;
+}
+
+.myJoinGroup {
+  padding: 0 10px;
+}
+
+.myJoinGroup .item {
+  position: relative;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.3rem;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.myJoinGroup .item .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.myJoinGroup .item .status {
+  position: absolute;
+  right: 10px;
+}
+
+.myJoinGroup .item .status, .myJoinGroup .item .user, .myJoinGroup .item .type,
+.myJoinGroup .item .location, .myJoinGroup .item .amount,
+.myJoinGroup .item .time {
+  padding-left: 100px;
+  padding-right: 10px;
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.myJoinGroup .item .status {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.bottom {
+  padding: 10px;
+}
+
+.bottom button {
+  background: #aeb4ff;
+  color: #fff;
+  width: 70% !important;
+  font-size: 15px;
+}
+
+.bottom button:active {
+  opacity: 0.8;
+}

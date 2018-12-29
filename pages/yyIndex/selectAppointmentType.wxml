@@ -1,0 +1,7 @@
+
+<view class="list">
+  <view class="item"  wx:for="{{typeList}}" wx:key="{{index}}" bindtap="select" data-id="{{item.id}}" data-title="{{item.title}}">
+    <image mode="aspectFit" src="{{item.image}}"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>

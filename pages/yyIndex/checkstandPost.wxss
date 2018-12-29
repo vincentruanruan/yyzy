@@ -1,0 +1,70 @@
+page{
+  background: #F8F8F8;
+}
+
+view{
+  background: #fff;
+}
+view.price{
+
+  line-height: 44px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+view.price text{
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-left: 1rem;
+}
+view.payType{
+  margin-top: 10px;
+}
+view.payType .item{
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+view.payType .item:active{
+  background: #f0f0f0;
+}
+view.payType .item .title,view.payType .item .desc{
+  background: none;
+  line-height: 24px;
+  padding-left: 80px;
+  font-size: 15px;
+}
+view.payType .item .desc{
+  font-size: 15px;
+  color: #999;
+}
+view.payType .item .icon{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 20px;
+}
+
+view.bz .title{
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  
+}
+view.bz{
+  margin-top: 10px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+view.bz .item{
+  width: calc(100% / 3);
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  padding-top: 10px;
+}
+view.bz .item .icon{
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}

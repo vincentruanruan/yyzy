@@ -1,0 +1,66 @@
+.wallet_group {
+  text-align: left;
+}
+
+.wallet_group .item {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+}
+
+.wallet_group .item .line {
+  position: absolute;
+  width: 1px;
+  height: 70%;
+  right: 0;
+  top: 15%;
+  background: #f0f0f0;
+}
+
+.wallet_group .item .desc, .wallet_group .item .title {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.wallet_group .item .desc {
+  color: #f44;
+  font-size: 16px;
+}
+
+.wallet_group .item .desc .number {
+  display: inline-block;
+  font-size: 22px;
+}
+
+.wallet_group .item .title {
+  color: #999;
+}
+
+view.btn {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+  line-height: 44px;
+  text-align: center;
+  border-radius: 22px;
+  color: #fff;
+  font-size: 16px;
+}
+
+view.btn:active {
+  opacity: 0.8;
+}
+
+view.btn.tixian {
+  background: #9981ea;
+  margin-top: 44px;
+}
+
+view.btn.chongzhi {
+  background: #a3a9ff;
+}

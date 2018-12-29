@@ -1,0 +1,7 @@
+/* pages/yyUser/about.wxss */
+
+view{
+  text-indent: 2em;
+  font-size: 17px;
+  padding: 10px 20px;
+}

@@ -1,0 +1,79 @@
+/* pages/yyUser/confirm.wxss */
+
+.bg{
+  background: #f0f0f0;
+}
+
+.bg .top{
+  padding: 25px 20px;
+  background: #fff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bg .top .icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+.bg .top .text{
+  padding-left: 100px;
+  font-size: 16px;
+  margin: 5px 0;
+}
+.bg .top .text .status{
+  float: right;
+}
+
+.bg .member{
+  background: #fff;
+}
+.bg .member .title{
+  padding: 0 15px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #B199FF;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.bg .member .title text{
+  float: right;
+}
+.bg .member .list .item{
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  position: relative;
+  min-height: 50px;
+}
+
+.bg .member .list .item image{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  border-radius: 50%;
+
+}
+.bg .member .list .item .btn{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  line-height: 40px;
+  font-size: 14px
+}
+.bg .member .list .item .name{
+  font-size: 18px;
+  padding-left: 90px;
+  line-height: 50px;
+}
+.bg .member .no{
+  text-align: center;
+  font-size: 16px;
+  color: #999;
+  margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+/**index.wxss**/
+
+.input_group {
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.input_group .item {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input_group .item .tip{
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.input_group .item .radio-group{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.input_group .item .radio-group .radio{
+  margin-right: 10px;
+}
+.input_group .item .radio-group .radio radio{
+  
+}
+.input_group .item .tip.normal {
+  display: block;
+}
+
+.input_group .item .tip.hidden {
+  display: none;
+}
+.input_group .item .verity_code{
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  line-height: 32px;
+  top: 25px;
+  background: #98b0ff;
+  color: #fff;
+  padding: 0 0;
+  z-index: 99999;
+  width: 100px;
+  text-align: center;
+  border: none;
+}
+.input_group .item .verity_code.disabled{
+  background: #F7F7F7;
+  color: #999;
+  pointer-events: none;
+}
+.input_group .item icon {
+  position: absolute;
+  right: 0;
+  top: 44px;
+  z-index: 9999;
+}
+
+.input_group .item icon.hidden {
+  display: none;
+}
+
+.input_group .item icon.normal {
+  display: inline-block;
+}
+
+.input_group .item input {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.input_group .register_btn {
+  width: 100%;
+}
+

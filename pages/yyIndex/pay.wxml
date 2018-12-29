@@ -1,0 +1,13 @@
+<view class="bg">
+
+  <view class='balance'>账户余额： ￥{{balance}}</view>
+
+  <view class='title'>请选择金额</view>
+
+  <view class='list'>
+    <view class='item' wx:for="{{array}}" wx:key="{{item}}"><text bindtap='select' data-selectId='{{index}}' class="{{arrayIndex == index?'select':''}}">￥{{item}}</text></view>
+  </view>
+
+  <button class='payBtn' bindtap='payClick'>充值</button>
+
+</view>

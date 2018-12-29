@@ -1,0 +1,34 @@
+{
+  "pages": [
+    
+    "pages/yyUser/login",
+    "pages/yyIndex/join",
+    "pages/yyUser/order",
+    "pages/yyIndex/checkstand",
+    "pages/yyIndex/checkstandPost",
+    "pages/yyIndex/selectAppointmentType",
+    "pages/yyIndex/selectLocation",
+    "pages/yyIndex/index",
+    "pages/yyUser/wallet",
+    "pages/yyUser/comment",
+"pages/yyUser/confirm",
+    "pages/yyIndex/pay",
+
+    "pages/yyUser/share",
+    "pages/yyUser/about",
+    "pages/yyUser/user",
+    "pages/yyUser/register",
+    "pages/yyUser/forget"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

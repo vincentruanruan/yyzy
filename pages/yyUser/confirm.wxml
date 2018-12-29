@@ -1,0 +1,33 @@
+<view class="bg">
+
+  <view class='top'>
+    <image src="{{icon||'/images/default.png'}}" class='icon' mode='aspectFit'></image>
+    <view class='text username'>发起人：{{user}}
+      <text class='status'>{{status==0?'未付款':''}}{{status==1?'待确认':''}}{{status==2?'进行中':''}}{{status==3?'待评价 ':''}}{{status==4?'已完成':''}}</text>
+    </view>
+    <view class='text type'>类型：{{type}}</view>
+    <view class='text loc'>地点：{{loc}}</view>
+    <view class='text price'>金额：￥{{price}}</view>
+    <view class='text time'>时间：{{time}}</view>
+  </view>
+
+  <view class='member'>
+    <view class='title'>报名人员 <text wx:if="{{list.length}}">{{nowNum}}/{{totalNum}}人</text></view>
+
+    <view class='list'>
+      <view class='item' wx:for="{{list}}" wx:key="{{item}}">
+        <image src="{{item.user.headimg||'/images/default.png'}}" mode='aspectFit'></image>
+        <view class='name'>{{item.user.nickname}} <text>{{item.user.sex==1?'男生':''}}{{item.user.sex==2?'女生':''}}</text></view>
+        <button class='btn' wx:if="{{item.isbid==0&&status==1}}" data-rkey='{{item.user.rkey}}' catchtap='addperson'>添加</button>
+        <button class='btn' wx:if="{{item.isbid==1&&(status==1||status==2)}}">已添加</button>
+        <button class='btn' wx:if="{{status==3&&item.iscomment==0}}" catchtap='comment' data-rkey="{{item.user.rkey}}">评价</button>
+        <button class='btn' wx:if="{{status==3&&item.iscomment==1}}">已评价</button>
+      </view>
+    </view>
+
+    <view class='no' wx:if="{{list.length<=0}}">暂无报名人员哦~</view>
+
+  </view>
+
+
+</view>

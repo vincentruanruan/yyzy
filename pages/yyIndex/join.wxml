@@ -1,0 +1,40 @@
+<view class='group'>
+
+  <view class="list">
+    <view class="item" wx:for="{{typeList}}" wx:key="{{index}}" wx:if="{{index<10}}" bindtap="select" data-id="{{item.id}}" data-title="{{item.title}}">
+      <image mode="aspectFit" src="{{item.image}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+
+  <view class='joinList'>
+
+    <view class='no'>{{myJoin.length
+      <=0 ? '暂无可接约会~': ''}}</view>
+
+        <view class='item' wx:for="{{myJoin}}" wx:key="item.id">
+
+          <image class='icon' src='{{item.user.headimg}}' mode='aspectFit'></image>
+          <view class='right'>
+            <view class='username'>发起人：{{item.user.nickname}}</view>
+            <view class='amount'>红包金额：{{item.amount}}</view>
+            <view class=''>时间：{{item.user.nickname}}</view>
+            <view class=''>要求性别：{{item.sex==0?'不限':''}}{{item.sex==1?'男':''}}{{item.sex==2?'女':''}}</view>
+          </view>
+
+          <button data-id='{{item.id}}' bindtap='joinClick'>抢单</button>
+
+        </view>
+
+    </view>
+
+  </view>
+
+
+
+
+  <view class='bottom'>
+    <text bindtap='postBtnClick' class='postBtn btn'>发单</text>
+    <text bindtap='acceptBtnClick' class='acceptBtn btn'>接单</text>
+    <image bindtap='userBtnClick' class='userBtn btn' mode='aspectFit' src='/images/usericon.png'></image>
+  </view>

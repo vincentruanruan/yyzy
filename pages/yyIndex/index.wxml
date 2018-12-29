@@ -1,0 +1,61 @@
+<image style="width:100%; background-color: #eeeeee;" mode="widthFix" src="/images/banner.jpg"></image>
+
+
+
+
+<view class="container">
+
+  <view class='select_group'>
+    <view class='item' bindtap="changeType">
+      <text class='left pt'>{{selectTypeTitle?selectTypeTitle:'约会类型'}}</text>
+      <text class='right'>更多选择<text> ></text></text>
+    </view>
+  </view>
+
+  <view class='select_group'>
+
+    <picker mode="multiSelector" value="{{pickerDateTime}}" bindchange="changeDate" range="{{pickerDateTimeArray}}">
+      <view class='item'>
+        <text class='left'>时间</text>
+        <text class='right'>{{selectTime ||'请选择时间'}}<text> ></text></text>
+      </view>
+    </picker>
+
+    <picker bindchange="changeDuration" value="{{durationIndex}}" range="{{durationArray}}">
+      <view class='item'>
+        <text class='left'>时长</text>
+        <text class='right'>{{durationArray[selectLong-1]||'请选择时长'}}<text> ></text></text>
+      </view>
+    </picker>
+
+    <view class='item' bindtap='changeLocation'>
+      <text class='left'>地点</text>
+      <text class='right'>{{selectLocation||'请选择地点'}}<text> ></text></text>
+    </view>
+
+    <picker mode='multiSelector' bindchange="changeAsk" range="{{askRange}}">
+      <view class='item'>
+        <text class='left'>要求</text>
+        <text class='right'>{{selectRequireGender || selectRequireNumber?selectRequire:'请选择要求'}}<text> ></text></text>
+      </view>
+    </picker>
+
+    <picker bindchange="changeReward" range="{{rewardRange}}">
+      <view class='item'>
+        <text class='left'>打赏</text>
+        <text class='right'>{{rewardRange[selectReward]||'请选择打赏'}}<text> ></text></text>
+      </view>
+    </picker>
+
+  </view>
+
+</view>
+
+
+
+
+<view class='bottom'>
+  <text bindtap='postBtnClick' class='postBtn btn'>发单</text>
+  <text bindtap='acceptBtnClick' class='acceptBtn btn'>接单</text>
+  <image bindtap='userBtnClick' class='userBtn btn' mode='aspectFit' src='/images/usericon.png'></image>
+</view>
